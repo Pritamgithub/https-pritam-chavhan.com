@@ -1,0 +1,74 @@
+<!-- comment hello -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: navy;
+    color: white;
+    padding: 100px;
+}
+.column {
+    float: left;
+    padding: 80px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Umass Boston</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Admissions</li>
+      <li>Current Students</li>
+      <li>Departments</li>
+      <li>Staffs</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>The University of Massachusetts Boston</h1>
+    <p>Umass Boston is the public research university. It is to be considered as the top in it's education.</p>
+    <p>You will learn more and more through this university.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer Text</p>
+</div>
+
+</body>
+</html>
